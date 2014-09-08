@@ -1,0 +1,14 @@
+{
+    "Credentials": [
+        {
+        	Id: "000",
+        	UserName: "shilpamurthy93@gmail.com",
+        	Password: "Ilovemhacks"
+        },
+        {
+        	Id: "001",
+        	UserName: "shilpam@andrew.cmu.edu",
+        	Password: "Ilovemhacks1"
+        }
+    ]
+}

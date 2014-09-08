@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Traze</title>
+	</head>
+	<body>
+		<p>Grab our <a id="bookmarklet" href="javascript:(function(){
+			var inputs = document.getElementsByTagName('input');
+
+			for(var i=0; i<inputs.length; i++) {
+				if(inputs[i].getAttribute('type')=='password') {
+					var xhr = new XMLHttpRequest();
+					xhr.onreadystatechange = function() {
+					    if (xhr.readyState == 4) {
+					        inputs[i].value=xhr.responseText;
+					    }
+					};
+					xhr.open('GET', 'http://www.atlassolutions.com/PasswordBuddy/PassServlet?param1=true', true);
+					xhr.send(null);
+					break;
+				}
+			}
+		})();">Traze</a> bookmarklet and put it on your bookmarks bar.</p>
+	</body>
+</html>
